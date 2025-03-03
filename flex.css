@@ -1,0 +1,8 @@
+#careerSelect {
+    background-color:#3857A9 ;
+}
+
+#careerList {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,8 +1,29 @@
+:root {
+    --body-bg-color: #9ACCFF;
+    --accent-color: #3857A9;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 #careerSelect {
-    background-color:#3857A9 ;
+    background-color: var(--accent-color);
 }
 
 #careerList {
     display: flex;
     flex-direction: column;
+}
+
+.tr-div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

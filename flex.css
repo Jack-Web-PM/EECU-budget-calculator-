@@ -26,4 +26,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
 }
+
+.tr-div li{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    list-style-type: none;
+}
+

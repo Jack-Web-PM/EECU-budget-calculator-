@@ -1,4 +1,6 @@
 :root {
+    --white: #fff;
+    --black: #000;
     --body-bg-color: #9ACCFF;
     --accent-color: #3857A9;
 }
@@ -6,6 +8,7 @@
 body {
     background-color: var(--body-bg-color);
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -26,13 +29,26 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1rem;
     margin: 0.5rem;
+    /* find a way to make this completely centered! the text is acting funky */
 }
 
-.tr-div li{
+.tr-div li {
     margin-right: 1rem;
     margin-left: 1rem;
     list-style-type: none;
 }
 
+.tax-payments {
+    display: flex;
+    flex-direction: column;
+    /* trying to make a grid here :( */
+}
+
+.tax-payments h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

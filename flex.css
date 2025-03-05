@@ -15,6 +15,19 @@ h1 {
     color: white;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 80%;
+    
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
 #careerSelect {
     background-color: var(--accent-color);
 }
@@ -44,11 +57,22 @@ h1 {
 .tax-payments {
     display: flex;
     flex-direction: column;
-    /* trying to make a grid here :( */
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+
+    margin: 7.5%;
+    margin-left: 22.5%;
+    padding: 0;
+    padding-bottom: 5px;
 }
 
 .tax-payments h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+td.third {
+    width: 30%;
 }

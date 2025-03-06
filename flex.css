@@ -30,20 +30,24 @@ td {
 
 #careerSelect {
     background-color: var(--accent-color);
+    height: 25rem;
+    overflow-y: auto;
+    width: 60%;
+    margin: auto;
 }
 
 #careerList {
     display: flex;
     flex-direction: column;
+    border: solid 1px red;
 }
 
 .tr-div {
     background-color: white;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 0.5rem;
     /* find a way to make this completely centered! the text is acting funky */
 }
@@ -75,4 +79,9 @@ td {
 
 td.third {
     width: 30%;
+    border: solid 2px #9ACCFF;
+    min-height: 100%;
+}
+
+.career-wrapper {
 }

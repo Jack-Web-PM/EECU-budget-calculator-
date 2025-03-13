@@ -33,7 +33,7 @@ td {
 
 button{
     width: 300px;
-    height: 30px;
+
 }
 
 label{
@@ -132,4 +132,15 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
     
+}
+
+.regTable > * {
+    margin: 0;
+    width: 99%;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    font-size: 25px;
+    align-self: center;
 }

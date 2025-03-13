@@ -3,6 +3,9 @@
     --black: #000;
     --body-bg-color: #9ACCFF;
     --accent-color: #3857A9;
+    --grey: #7e7e7e;
+    --light-grey: #D9d9d9;
+
 }
 
 body {
@@ -19,7 +22,7 @@ table {
     border-collapse: separate;
     border-spacing: 2px;
     width: 80%;
-    
+    text-indent: initial;
 }
 
 td {
@@ -100,10 +103,33 @@ td.third {
 }
 
 .Switch-Buttons{
-    display:flex;
-    width: 60%;
-    flex-direction: row;
     justify-self: center;
     padding: 1rem;
 }
 
+.chart {
+    width: 50%;
+    align-items: center;
+    justify-self: center;
+}
+
+.regTable {
+    width: 20%;
+}
+
+a:link, a:visited {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 14px 80px;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: var(--grey);
+}
+
+#check {
+    display: flex;
+    flex-direction: column;
+    
+}

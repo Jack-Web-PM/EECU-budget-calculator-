@@ -5,8 +5,18 @@
     --accent-color: #3857A9;
     --grey: #7e7e7e;
     --light-grey: #D9d9d9;
-
 }
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 
 body {
     background-color: var(--body-bg-color);
@@ -21,7 +31,6 @@ h1 {
 table {
     border-collapse: separate;
     border-spacing: 2px;
-    width: 80%;
     text-indent: initial;
 }
 
@@ -31,14 +40,59 @@ td {
     unicode-bidi: isolate;
 }
 
-button{
+#lightTheme {
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+    width: 30px;
+    margin-left: 2%;
+    height: 30px;
+    background-color: var(--black);
+    border-radius: 5px;
+    border-color: var(--grey);
+    border-width: 1px;
+}
+
+.changeTheme {
+    background-color: var(--grey);
+    width: 5%;
+    border-radius: 5px;
+}
+
+#darkTheme {
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+    width: 30px;
+    margin-left: 2%;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border-color: var(--grey);
+    border-width: 1px;
+}
+
+button {
     width: 300px;
+}
+
+label {
+    width: 300px;
+    padding-left: 50px;
+}
+
+.regTable input {
+    text-align: center;
+}
+
+.regTable button {
+    width: 100%;
 
 }
 
-label{
-    width: 300px;
-    padding-left: 50px;   
+.reset {
+    display: flex;
+    justify-self: center;
 }
 
 #careerSelect {
@@ -50,7 +104,7 @@ label{
 }
 
 #careerList {
-    display:block;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-self: center;
@@ -98,11 +152,9 @@ td.third {
     min-height: 100%;
 }
 
-.career-wrapper {
+.career-wrapper {}
 
-}
-
-.Switch-Buttons{
+.Switch-Buttons {
     justify-self: center;
     padding: 1rem;
 }
@@ -117,24 +169,26 @@ td.third {
     width: 20%;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     background-color: var(--white);
     color: var(--black);
     padding: 14px 80px;
     display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     background-color: var(--grey);
 }
 
 #check {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.regTable > * {
+.regTable>* {
     margin: 0;
     width: 99%;
     padding: 0;

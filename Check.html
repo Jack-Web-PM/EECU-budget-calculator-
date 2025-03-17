@@ -5,16 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="chart">
+        <canvas id="pieChart"></canvas>
+        <canvas id="barChart"></canvas>
+    </div>
+    <section class="changeTheme sideSegment">
+        <button id="darkTheme" onclick="dark()"></button>
+        <button id="lightTheme" onclick="light()" class="active"></button>
+    </section>
+
     <article class="career-wrapper">
+        <section class="changeChart sideSegment">
+            <button id="showPieChart" onclick="showChart('pie')" class="active"></button>
+            <button id="showBarChart" onclick="showChart('bar')"></button>
+            <button id="showMixedChart" onclick="showChart('mixed')"></button>
+        </section>
         <section id="careerSelect">
-            <section class="Switch-Buttons">
+            <section class="switchButtons">
                 <a href="index.html"></a>
                 <a href="Check.html"></a>
             </section>
+
             <h1>Check Register</h1>
             <table id="check">
                 <tbody>
@@ -31,5 +46,7 @@
             </div>
         </section>
     </article>
-    <scruot src="main.js"></scruot>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="main.js"></script>
 </body>
